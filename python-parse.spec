@@ -1,8 +1,9 @@
+# NOTE: for versions >= 1.13.0 (for python 3.4+) see python3-parse.spec
 #
 # Conditional build:
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-parse.spec)
 
 Summary:	parse() - the opposite of format()
 Summary(pl.UTF-8):	parse() - odwrotność format()
