@@ -8,14 +8,16 @@
 Summary:	parse() - the opposite of format()
 Summary(pl.UTF-8):	parse() - odwrotność format()
 Name:		python-parse
-# keep 1.12.x here for python2 support
-Version:	1.12.1
-Release:	2
+# keep 1.13.x here for python2 support
+# (despite classifiers, 1.13.1 works and passes test suite on python 2.7 and
+#  is required for parse_type 0.6.2, which supports python 2.7)
+Version:	1.13.1
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/parse/
 Source0:	https://files.pythonhosted.org/packages/source/p/parse/parse-%{version}.tar.gz
-# Source0-md5:	8fc634769f1d841f14a52dd731ca447a
+# Source0-md5:	6591f6095516b2f0e0c105c76777ad32
 URL:		https://pypi.org/project/parse/
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.7
